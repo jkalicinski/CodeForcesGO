@@ -17,10 +17,12 @@ func main() {
 		return
 	}
 
-	minUpper := math.Ceil(float64(len(runes)) / 2.0)
+	minUpper := 0
 
 	if len(runes)%2 == 0 {
-		minUpper++
+		minUpper = (len(input) / 2) + 1
+	} else {
+		minUpper = int(math.Ceil(float64(len(runes)) / 2.0))
 	}
 
 	upperCount := 0
