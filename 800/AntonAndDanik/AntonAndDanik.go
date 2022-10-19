@@ -35,7 +35,7 @@ func main() {
 		return
 	}
 
-	if a > d {
+	if a < d {
 		fmt.Println("Danik")
 		return
 	}
